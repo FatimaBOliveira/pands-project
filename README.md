@@ -7,10 +7,13 @@ This README follows the the documentation from [Github](https://docs.github.com/
 ## What the project does
 
 This repository includes:
-1. a [Python script](analysis.py), that loads the data and outputs it in a presentable way through summary of variables, visual representation and correlation;
-2. a notebook with explanation of the Python script and approach of the data set;
-3. a [txt file](https://github.com/FatimaBOliveira/pands-project/blob/b176e1d0cc1c133d192bd1a79386e40216491a59/Summary%20of%20each%20variable.txt) generated with Python, with the summary of the variables;
-3. images with the plotted data in histograms, bars and scatter plots, all generated with Python script.
+1. this README to explain the purpose of this repository;
+2. [iris folder](iris) with the data set downloaded from the [study](https://archive.ics.uci.edu/dataset/53/iris);
+3. a [Python script](analysis.py), that loads the data and outputs it in a presentable way through summary of variables, visual representation and correlation;
+4. a [notebook](iris.ipynb) with explanation of the Python script and approach of the data set;
+5. a [txt file](https://github.com/FatimaBOliveira/pands-project/blob/b176e1d0cc1c133d192bd1a79386e40216491a59/Summary%20of%20each%20variable.txt) generated with the Python script, containing the summary of the variables;
+6. images with the plotted data in histograms, bars and scatter plots, all generated with Python script;
+7. a .gitignore as standard.
 
 ## Why the project is useful
 

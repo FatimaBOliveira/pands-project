@@ -5,15 +5,16 @@
 
 # Data frames.
 import pandas as pd
-# Plotting.
-import matplotlib.pyplot as plt
 # Numerical arrays.
 import numpy as np
- 
+# Plotting.
+import matplotlib.pyplot as plt
+
+
     # Loading the data
 
 # For this I downloaded the Iris data set from URL in: https://archive.ics.uci.edu/static/public/53/iris.zip.
-# I extracted the files from zip file into my pands-project folder/repository.
+# I extracted the files from zip file into my pands-project folder.
 path = "./iris/"
 logFilename = path + "iris.data"
 
@@ -25,13 +26,13 @@ colNames= ("sepal_length_cm",
     "class" 
 )
 
-# load the data set in this python script.
-df = pd.read_csv(logFilename, sep=',', header= None, names=colNames)
+# Load the data set in this python script.
+df = pd.read_csv(logFilename, names=colNames)
 
     # Summary of each variable
 
 a=df.describe()
-a.to_csv('Summary of each variable.txt', sep="\t", mode="w") # "w" will create txt file with the summary of the variables.
+a.to_csv("Summary of each variable.txt", sep="\t", mode="w") # "w" will create txt file with the summary of the variables.
 # https://saturncloud.io/blog/how-to-write-a-pandas-dataframe-to-a-txt-file/
 # https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_csv.html
 
@@ -86,7 +87,7 @@ fig, axs = plt.subplots(2, 3, figsize=(10, 6))
 # https://matplotlib.org/stable/gallery/lines_bars_and_markers/scatter_star_poly.html#sphx-glr-gallery-lines-bars-and-markers-scatter-star-poly-py
 # https://python-charts.com/correlation/scatter-plot-matplotlib/?utm_content=cmp-true
 # Plot them together
-axs[0, 0].scatter(slen, swid, edgecolors=["black","red"], label=["sepal lenght", "sepa width"])
+axs[0, 0].scatter(slen, swid, edgecolors=["black","red"])
 axs[0, 0].set_title("Sepal lenght and sepal width")
 axs[0, 1].scatter(slen, plen, edgecolors=["black","cyan"])
 axs[0, 1].set_title("Sepal lenght and petal lenght")
