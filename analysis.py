@@ -44,10 +44,10 @@ plen = df["petal_length_cm"]
 pwid = df["petal_width_cm"]
 
 # Histogram of variables together.
-plt.hist(slen, label= "sepal length", edgecolor = "black", fill=False)
-plt.hist(swid, label= "sepal width", edgecolor = "red", fill=False)
-plt.hist(plen, label= "petal length", edgecolor = "cyan", fill=False)
-plt.hist(pwid, label="petal width", edgecolor = "lime", fill=False)
+plt.hist(slen, label= "sepal length", color="cyan", histtype="step")
+plt.hist(swid, label= "sepal width", color = "red", histtype="step")
+plt.hist(plen, label= "petal length", color = "black", histtype="step")
+plt.hist(pwid, label="petal width", color = "lime", histtype="step")
 plt.title("Iris data set")
 plt.xlabel("cm")
 plt.ylabel("counts")
@@ -56,18 +56,19 @@ plt.legend()
 # https://matplotlib.org/stable/gallery/color/named_colors.html
 
 # Separate histograms of each variable.
-df1 = pd.DataFrame(slen)
-df2 = pd.DataFrame(swid)
-df3 = pd.DataFrame(plen)
-df4 = pd.DataFrame(pwid)
-fig, axes = plt.subplots(2,2, figsize=(10, 6))
+
+fig, axes = plt.subplots(2,2, figsize=(10, 7))
 # https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.subplots.html
 # https://www.tutorialspoint.com/how-to-plot-two-histograms-side-by-side-using-matplotlib
 
-df1.hist(ax=axes[0, 0], edgecolor = "black")
-df2.hist(ax=axes[0, 1], edgecolor = "red")
-df3.hist(ax=axes[1, 0], edgecolor = "cyan")
-df4.hist(ax=axes[1, 1], edgecolor = "lime")
+axes[0, 0].hist(slen, edgecolor = "cyan")
+axes[0, 0].set_title("Sepal Length (cm)")
+axes[0, 1].hist(swid, edgecolor = "red")
+axes[0, 1].set_title("Sepal width (cm)")
+axes[1, 0].hist(plen, edgecolor = "black")
+axes[1, 0].set_title("Petal length (cm)")
+axes[1, 1].hist(pwid, edgecolor = "lime")
+axes[1, 1].set_title("Petal width (cm)")
 #plt.savefig("Histograms of each variable.png") 
 plt.show()
 
@@ -83,21 +84,21 @@ plt.show()
     # Scatter plots
 
 # Create a new figure with the scatter plots. 
-fig, axs = plt.subplots(2, 3, figsize=(10, 6))
+fig, axs = plt.subplots(2, 3, figsize=(14, 7))
 # https://matplotlib.org/stable/gallery/lines_bars_and_markers/scatter_star_poly.html#sphx-glr-gallery-lines-bars-and-markers-scatter-star-poly-py
 # https://python-charts.com/correlation/scatter-plot-matplotlib/?utm_content=cmp-true
 # Plot them together
-axs[0, 0].scatter(slen, swid, edgecolors=["black","red"])
+axs[0, 0].scatter(slen, swid, edgecolors=["cyan","red"])
 axs[0, 0].set_title("Sepal lenght and sepal width")
-axs[0, 1].scatter(slen, plen, edgecolors=["black","cyan"])
+axs[0, 1].scatter(slen, plen, edgecolors=["cyan","black"])
 axs[0, 1].set_title("Sepal lenght and petal lenght")
-axs[0, 2].scatter(slen, pwid, edgecolors=["black","lime"])
+axs[0, 2].scatter(slen, pwid, edgecolors=["cyan","lime"])
 axs[0, 2].set_title("Sepal lenght and petal width")
-axs[1, 0].scatter(swid, plen, edgecolors=["red","cyan"])
+axs[1, 0].scatter(swid, plen, edgecolors=["red","black"])
 axs[1, 0].set_title("Sepal width and petal lenght")
 axs[1, 1].scatter(swid, pwid, edgecolors=["red","lime"])
 axs[1, 1].set_title("Sepal width and petal width")
-axs[1, 2].scatter(plen, pwid, edgecolors=["cyan","lime"])
+axs[1, 2].scatter(plen, pwid, edgecolors=["black","lime"])
 axs[1, 2].set_title("Petal lenght and petal width")
 plt.show()
 
