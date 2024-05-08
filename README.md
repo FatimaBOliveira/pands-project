@@ -21,7 +21,9 @@ While doing this work, I learned many essential skills that I need to develop in
 
 ## How users can get started with the project
 
-To run the codes, [Anaconda](https://www.anaconda.com/) and [Visual Studio Code](https://code.visualstudio.com/) need to be installed to run these programs.
+To run the codes, [Anaconda](https://www.anaconda.com/) and [Visual Studio Code](https://code.visualstudio.com/) need to be installed to run these programs. The jupyter notebook can also be open through Google colab in the following link: <a target="_blank" href="https://colab.research.google.com/github/FatimaBOliveira/pands-project/blob/main/iris.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
 
 ## Where users can get help with your project
 
