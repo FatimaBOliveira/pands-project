@@ -53,7 +53,7 @@ plt.title("Iris data set")
 plt.xlabel("cm")
 plt.ylabel("counts")
 plt.legend()
-#plt.savefig("Histogram with variables together.png") # to save in the directory
+plt.savefig("Histogram with variables together.png") # to save in the directory
 
 
 # Separate histograms of each variable.
@@ -70,7 +70,7 @@ axes[1, 0].hist(plen, edgecolor = "black")
 axes[1, 0].set_title("Petal length (cm)")
 axes[1, 1].hist(pwid, edgecolor = "lime")
 axes[1, 1].set_title("Petal width (cm)")
-#plt.savefig("Histograms of each variable.png") 
+plt.savefig("Histograms of each variable.png") 
 plt.show()
 
 # Bar chart - class of Iris.
@@ -78,7 +78,7 @@ s = df["class"]
 values, counts = np.unique(s, return_counts=True)
 plt.bar(values, counts, color=["green", "red","blue"])
 plt.title("Class of Iris")
-#plt.savefig("Class of Iris bar chart.png")
+plt.savefig("Class of Iris bar chart.png")
 plt.show()
 
 
@@ -102,6 +102,7 @@ axs[1, 1].scatter(swid, pwid, edgecolors=["red","lime"])
 axs[1, 1].set_title("Sepal width and petal width")
 axs[1, 2].scatter(plen, pwid, edgecolors=["black","lime"])
 axs[1, 2].set_title("Petal length and petal width")
+plt.savefig("Scatter plots.png")
 plt.show()
 
 # Pearson Correlation Coefficient.
