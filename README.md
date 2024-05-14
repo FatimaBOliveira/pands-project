@@ -8,7 +8,7 @@ This README follows the the documentation from [Github](https://docs.github.com/
 
 This repository includes:
 1. this README to explain the purpose of this repository;
-2. [iris folder](iris) with the data set downloaded and available in the [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/53/iris);
+2. [iris folder](iris) with the data set downloaded from [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/53/iris);
 3. a [Python script](analysis.py), that loads the data and outputs it in a presentable way through summary of variables, visual representation and correlation;
 4. a [notebook](iris.ipynb) with approach of the data set and explanation of the Python script;
 5. a [txt file](https://github.com/FatimaBOliveira/pands-project/blob/b176e1d0cc1c133d192bd1a79386e40216491a59/Summary%20of%20each%20variable.txt) generated with the Python script, containing the summary of the variables;
@@ -21,7 +21,7 @@ While doing this work, I learned many essential skills that I need to develop in
 
 ## How users can get started with the project
 
-To run the codes, [Anaconda](https://www.anaconda.com/) and [Visual Studio Code](https://code.visualstudio.com/) need to be installed to run these programs. The jupyter notebook can also be open through Google colab in the following link: <a target="_blank" href="https://colab.research.google.com/github/FatimaBOliveira/pands-project/blob/main/iris.ipynb">
+To run the codes, [Anaconda](https://www.anaconda.com/) and [Visual Studio Code](https://code.visualstudio.com/) need to be installed. The jupyter notebook can be also open through Google colab in the following link: <a target="_blank" href="https://colab.research.google.com/github/FatimaBOliveira/pands-project/blob/main/iris.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
