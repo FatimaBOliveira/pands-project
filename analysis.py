@@ -101,7 +101,7 @@ values, counts = np.unique(s, return_counts=True)
 # Crate a bar chart.
 plt.bar(values, counts, color=["green", "red","blue"])
 
-# Add a tittle, save the figure and show it.
+# Add a tittle, y axis label, save the figure and show it.
 plt.title("Class of Iris")
 plt.ylabel("Counts")
 plt.savefig("Class of Iris bar chart.png")
